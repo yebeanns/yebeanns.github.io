@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Engineer Portfolio</title>
+  <style>
+    :root {
+      --bg: #fafafa;
+      --bg-alt: #e8e8e8;
+      --text: #212529;
+      --muted: #6c757d;
+      --accent: #3b82f6; /* 파란 강조색 */
+      --accent-hover: #2563eb;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); }
+
+    .container { max-width: 720px; margin: 0 auto; padding: 2rem 1rem; }
+
+    header { text-align: center; margin-bottom: 3rem; }
+
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    h1 span { color: var(--muted); font-size: 0.8rem; font-weight: normal; }
+
+    .intro { max-width: 600px; margin: 2rem auto; text-align: center; }
+    .intro p { font-size: 1.1rem; color: var(--muted); margin-top: 1rem; }
+
+    .section { padding: 3rem 0; border-top: 1px solid var(--bg-alt); border-bottom: 1px solid var(--bg-alt); }
+    .section:first-child { border-top: none; }
+    .section:last-child { border-bottom: none; }
+
+    .section-title { text-align: center; margin-bottom: 2rem; }
+    .section-title h2 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .section-title p { color: var(--muted); font-size: 0.95rem; }
+
+    .grid { display: grid; gap: 1.5rem; }
+    @media (min-width: 600px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+
+    .card { background: var(--card); padding: 1.5rem; border-radius: 8px; }
+    .card h3 { margin-bottom: 0.5rem; font-size: 1.2rem; }
+    .tag { display: inline-block; padding: 0.2rem 0.6rem; background: var(--bg-alt); color: var(--muted); border-radius: 4px; font-size: 0.7rem; margin-right: 0.4rem; margin-bottom: 0.4rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>안녕하세요, <span>AI 엔지니어</span></h1>
+      <p>인공지능과 소프트웨어를 연구합니다</p>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>소개</h2>
+          <p>AI 모델 개발 및 배포, 데이터 파이프라인 구축을 중심으로 활동하고 있습니다.</p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>전문 분야</h3>
+            <ul style="list-style: none; padding-left: 0;">
+              <li><span class="tag">머신러닝</span></li>
+              <li><span class="tag">딥러닝</span></li>
+              <li><span class="tag">데이터 엔지니어링</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>주요 기술</h3>
+            <ul style="list-style: none; padding-left: 0;">
+              <li><span class="tag">Python</span></li>
+              <li><span class="tag">PyTorch</span></li>
+              <li><span class="tag">TensorFlow</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="text-align: center; padding: 2rem; color: var(--muted); font-size: 0.85rem;">
+      © 2026 AI Engineer Portfolio
+    </footer>
+  </div>
+</body>
+</html>
